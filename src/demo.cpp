@@ -42,16 +42,16 @@ void image_test(string image_path)
     start = clock();
     find.findFace(image);
     start = clock() -start;
-    imshow("result", image);
+//    imshow("result", image);
     imwrite("result.jpg",image);
     cout<<"time is  "<<1000*(double)start/CLOCKS_PER_SEC<<endl;
-    waitKey(0);
+//    waitKey(0);
     image.release();
 }
 
 int main()
 {
-    camera_test(10000);
-//    image_test("4.jpg");
+//    camera_test(10000);
+    image_test("4.jpg");
     return 0;
 }
